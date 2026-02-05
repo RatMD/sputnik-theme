@@ -19,7 +19,12 @@ export default defineConfig({
                 'resources/theme.ts'
             ],
             hotFile: path.join(base, 'assets', '.hot'),
-            refresh: true,
+            refresh: {
+                paths: [
+                    './**/*',
+                    '../../plugins/ratmd/laika/resources/**/*'
+                ]
+            },
         }),
         tailwindcss(),
         vue(),

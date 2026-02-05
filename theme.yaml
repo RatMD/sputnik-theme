@@ -1,7 +1,7 @@
-name: Laika Demonstration Template
-description: 'A simple demonstration template showcasing Laika, the OctoberCMS extension that bridges CMS content with a modern Vue/Vite frontend.'
-homepage: 'https://github.com/RatMD/laika-plugin'
+name: SPUTNIK - LAIKA Demonstration Template
+description: 'SPUTNIK is a lightweight demonstration template for LAIKA, the OctoberCMS extension that brings native CMS content into a modern Vue/Vite frontend.'
+homepage: 'https://github.com/RatMD/sputnik-plugin'
 author: rat.md
 authorCode: RatMD
-code: ratmd-laika
+code: ratmd-sputnik
 database: '0'

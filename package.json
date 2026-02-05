@@ -1,7 +1,7 @@
 {
-    "name": "@ratmd/laika-theme",
+    "name": "@ratmd/sputnik-theme",
     "version": "0.1.0",
-    "description": "A simple demonstration template showcasing Laika, the OctoberCMS extension that bridges CMS content with a modern Vue/Vite frontend.",
+    "description": "SPUTNIK is a lightweight demonstration template for LAIKA, the OctoberCMS extension that brings native CMS content into a modern Vue/Vite frontend.",
     "author": "Sam <sam@rat.md> (https://rat.md)",
     "keywords": [
         "template",
