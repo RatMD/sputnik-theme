@@ -1,0 +1,7 @@
+name: Laika Demonstration Template
+description: 'A simple demonstration template showcasing Laika, the OctoberCMS extension that bridges CMS content with a modern Vue/Vite frontend.'
+homepage: 'https://github.com/RatMD/laika-plugin'
+author: rat.md
+authorCode: RatMD
+code: ratmd-laika
+database: '0'

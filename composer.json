@@ -1,0 +1,39 @@
+{
+    "name": "ratmd/laika-theme",
+    "type": "october-theme",
+    "version": "0.1.0",
+    "description": "A simple demonstration template showcasing Laika, the OctoberCMS extension that bridges CMS content with a modern Vue/Vite frontend.",
+    "keywords": [
+        "october",
+        "octobercms",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://octobercms.com/theme/ratmd-laika",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sam",
+            "email": "sam@rat.md",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "info@rat.md",
+        "issues": "https://www.github.com/RatMD/laika-plugin/issues",
+        "source": "https://www.github.com/RatMD/laika-plugin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">= 8.2",
+        "composer/installers": "~2.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}
