@@ -17,5 +17,5 @@ Read more about [LAIKA](https://www.github.com/ratmd/laika-plugin).
 
 ## Copyright
 
-Copyright © 2025 - 2026 rat.md.
+Copyright © 2025 - 2026 rat.md.\
 Published under the MIT-License.
