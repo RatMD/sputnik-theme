@@ -17,7 +17,7 @@ async function main() {
             } else if (`./pages/${name}Page.vue` in pages) {
                 return pages[`./pages/${name}Page.vue`];
             } else {
-                throw new Error('Laika: Vue Page component not found.');
+                throw new Error(`Laika: Vue Page component for "${name}" not found.`);
             }
         },
         setup({ App, root, props, plugin }) {

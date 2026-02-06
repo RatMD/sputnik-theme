@@ -1,5 +1,5 @@
 <template>
-    <nav v-if="socialMenu" class="flex flex-row gap-2">
+    <nav v-if="socialMenu && socialMenu.vars.menuItems.length > 0" class="flex flex-row gap-2">
         <template v-for="(item, idx) of socialMenu.vars.menuItems" :key="idx">
             <TooltipProvider>
                 <Tooltip>

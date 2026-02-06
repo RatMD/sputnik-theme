@@ -1,0 +1,22 @@
+items:
+    -
+        title: Home
+        type: url
+        url: /
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Static Content'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: static-content
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Main Menu'

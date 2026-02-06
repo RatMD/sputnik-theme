@@ -1,21 +1,19 @@
 <template>
-    <NavigationMenu class="bg-white rounded-lg">
+    <NavigationMenu v-if="mainMenu && mainMenu.vars.menuItems.length > 0" class="bg-white rounded-lg">
         <NavigationMenuList>
-            <NavigationMenuItem as-child :class="navigationMenuTriggerStyle()">
-                <NavigationMenuLink>Home</NavigationMenuLink>
-            </NavigationMenuItem>
+            <template v-for="(item, idx) of mainMenu.vars.menuItems" :key="idx">
+                <NavigationMenuItem @click="() => $laika.visit(item.url)" as-child :class="navigationMenuTriggerStyle()">
+                    <NavigationMenuLink>{{ item.title }}</NavigationMenuLink>
+                </NavigationMenuItem>
+            </template>
 
-            <NavigationMenuItem>
-                <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-                <NavigationMenuContent>
-                    <NavigationMenuLink>Link</NavigationMenuLink>
-                </NavigationMenuContent>
-            </NavigationMenuItem>
         </NavigationMenuList>
     </NavigationMenu>
 </template>
 
 <script lang="ts" setup>
+import { useLaika } from '../../../../../plugins/ratmd/laika/resources';
+import { computed } from 'vue';
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -27,4 +25,16 @@ import {
     NavigationMenuViewport,
     navigationMenuTriggerStyle,
 } from '@/components/navigation-menu';
+
+// Composable
+const laika = useLaika();
+
+// States
+const mainMenu = computed<any>(() => {
+    if (laika.components) {
+        return 'main' in laika.components ? laika.components.main : null;
+    } else {
+        return null;
+    }
+});
 </script>

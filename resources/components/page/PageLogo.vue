@@ -17,5 +17,5 @@ const laika = useLaika();
 // States
 const description = computed<string>(() => {
     return ((laika.theme?.options?.site_slogan || '') as string).replace(/\*(.*)?\*/g, '<span class="font-semibold">$1</span>');
-})
+});
 </script>
