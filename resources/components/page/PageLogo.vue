@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col items-center gap-2">
         <a href="" class="font-logo text-7xl">
-            {{ $payload.theme.options.site_name }}
+            {{ $payload?.theme.options.site_name || 'SPUTNIK' }}
         </a>
         <span class="font-display" v-html="description"></span>
     </div>

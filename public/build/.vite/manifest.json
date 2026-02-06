@@ -1,0 +1,40 @@
+{
+  "_vendor-CzvjBhwS.js": {
+    "file": "assets/vendor-CzvjBhwS.js",
+    "name": "vendor"
+  },
+  "assets/fonts/limelight-v21-latin-regular.woff2": {
+    "file": "assets/limelight-v21-latin-regular-CvlMCR9p.woff2",
+    "src": "assets/fonts/limelight-v21-latin-regular.woff2"
+  },
+  "assets/fonts/zalando-sans-expanded-v2-latin-600.woff2": {
+    "file": "assets/zalando-sans-expanded-v2-latin-600-eOVwmJ3x.woff2",
+    "src": "assets/fonts/zalando-sans-expanded-v2-latin-600.woff2"
+  },
+  "assets/fonts/zalando-sans-expanded-v2-latin-700.woff2": {
+    "file": "assets/zalando-sans-expanded-v2-latin-700-m6T9WdOV.woff2",
+    "src": "assets/fonts/zalando-sans-expanded-v2-latin-700.woff2"
+  },
+  "assets/fonts/zalando-sans-expanded-v2-latin-regular.woff2": {
+    "file": "assets/zalando-sans-expanded-v2-latin-regular-BbAsit5s.woff2",
+    "src": "assets/fonts/zalando-sans-expanded-v2-latin-regular.woff2"
+  },
+  "resources/theme.ts": {
+    "file": "assets/theme-CAsh1sUi.js",
+    "name": "theme",
+    "src": "resources/theme.ts",
+    "isEntry": true,
+    "imports": [
+      "_vendor-CzvjBhwS.js"
+    ],
+    "css": [
+      "assets/theme-Cn6g1i5i.css"
+    ],
+    "assets": [
+      "assets/zalando-sans-expanded-v2-latin-regular-BbAsit5s.woff2",
+      "assets/zalando-sans-expanded-v2-latin-600-eOVwmJ3x.woff2",
+      "assets/zalando-sans-expanded-v2-latin-700-m6T9WdOV.woff2",
+      "assets/limelight-v21-latin-regular-CvlMCR9p.woff2"
+    ]
+  }
+}
