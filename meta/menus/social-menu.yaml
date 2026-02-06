@@ -1,0 +1,24 @@
+items:
+    -
+        title: Facebook
+        nesting: null
+        type: url
+        url: 'https://www.facebook.com'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+    -
+        title: Instagram
+        type: url
+        url: 'https://www.instagram.com'
+        code: ''
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+name: 'Social Menu'

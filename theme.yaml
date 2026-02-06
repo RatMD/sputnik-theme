@@ -5,3 +5,6 @@ author: rat.md
 authorCode: RatMD
 code: ratmd-sputnik
 database: '0'
+form: config/settings.yaml
+require:
+    - RainLab.Pages

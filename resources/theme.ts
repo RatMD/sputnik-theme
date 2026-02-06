@@ -1,3 +1,5 @@
+import './styles/theme.css';
+
 import type { ResolveResult } from "../../../plugins/ratmd/laika/resources/types";
 import { createApp, h } from "vue";
 import { createLaikaApp } from "../../../plugins/ratmd/laika/resources/laika";

@@ -1,0 +1,12 @@
+
+fields:
+    site_name:
+        label: Site Name
+        comment: The website name as it should appear on the front-end
+        default: SPUTNIK
+        span: left
+    site_slogan:
+        label: Site Slogan
+        comment: The website slogan shown below the site name on the front-end
+        default: A demonstration theme for *LAIKA*!
+        span: right
