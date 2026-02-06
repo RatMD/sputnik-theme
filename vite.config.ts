@@ -21,7 +21,6 @@ export default defineConfig(() => {
     return {
         base: `/`,
         publicDir: path.resolve(__dirname, 'resources/assets'),
-
         plugins: [
             laravel({
                 input: [
@@ -40,7 +39,7 @@ export default defineConfig(() => {
             i18n(),
         ],
         build: {
-            manifest: true,
+            manifest: 'build/manifest.json',
             outDir: './assets/',
             rollupOptions: {
                 output: {
