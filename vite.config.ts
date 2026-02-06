@@ -21,6 +21,7 @@ export default defineConfig(() => {
     return {
         base: `/`,
         publicDir: path.resolve(__dirname, 'resources/assets'),
+
         plugins: [
             laravel({
                 input: [
@@ -40,6 +41,7 @@ export default defineConfig(() => {
         ],
         build: {
             manifest: true,
+            outDir: './assets/',
             rollupOptions: {
                 output: {
                     manualChunks: (id) => id.includes('node_modules') ? 'vendor' : void 0
