@@ -18,8 +18,11 @@ export default defineConfig(() => {
         dotenv.config({ path: envPath })
     }
 
+    const base = __dirname;
+    const theme = path.basename(__dirname);
+
     return {
-        base: `/`,
+        base: `/themes/${theme}/assets/`,
         publicDir: path.resolve(__dirname, 'resources/assets'),
         plugins: [
             laravel({
@@ -39,7 +42,7 @@ export default defineConfig(() => {
             i18n(),
         ],
         build: {
-            manifest: 'build/manifest.json',
+            manifest: true,
             outDir: './assets/',
             rollupOptions: {
                 output: {

@@ -20,7 +20,7 @@
     "src": "assets/fonts/zalando-sans-expanded-v2-latin-regular.woff2"
   },
   "resources/theme.ts": {
-    "file": "assets/theme-Cqrmk5H1.js",
+    "file": "assets/theme-CE0XNYtY.js",
     "name": "theme",
     "src": "resources/theme.ts",
     "isEntry": true,
@@ -28,7 +28,7 @@
       "_vendor-CzvjBhwS.js"
     ],
     "css": [
-      "assets/theme-CTVFBssr.css"
+      "assets/theme-Dw4ismzD.css"
     ],
     "assets": [
       "assets/zalando-sans-expanded-v2-latin-regular-BbAsit5s.woff2",
