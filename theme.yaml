@@ -7,4 +7,5 @@ code: ratmd-sputnik
 database: '0'
 form: config/settings.yaml
 require:
+    - RainLab.Blog
     - RainLab.Pages
