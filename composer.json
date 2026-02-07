@@ -1,5 +1,5 @@
 {
-    "name": "ratmd/sputnik-theme",
+    "name": "ratmd/ratmd-sputnik-theme",
     "type": "october-theme",
     "version": "0.1.0",
     "description": "SPUTNIK is a lightweight demonstration template for LAIKA, the OctoberCMS extension that brings native CMS content into a modern Vue/Vite frontend.",
