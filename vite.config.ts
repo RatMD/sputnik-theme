@@ -18,6 +18,14 @@ export default defineConfig(() => {
         dotenv.config({ path: envPath })
     }
 
+    function env(key: string, defaultValue: unknown = null) {
+        if (key in process.env) {
+            return process.env[key];
+        } else {
+            return defaultValue;
+        }
+    }
+
     const base = __dirname;
     const theme = path.basename(__dirname);
 
@@ -57,11 +65,15 @@ export default defineConfig(() => {
         },
         server: {
             cors: true,
-            host: process.env.VITE_HOST ?? '0.0.0.0',
+            host: env('VITE_HOST', '0.0.0.0'),
             hmr: {
-                host: process.env.VITE_HOST ?? '0.0.0.0',
+                host: env('VITE_HOST', '0.0.0.0'),
             },
-            allowedHosts: process.env.VITE_HOST ? [ process.env.VITE_HOST ] : []
+            allowedHosts: env('VITE_HOST', null) ? [ env('VITE_HOST') ] : [],
+            https: env('VITE_HTTPS', false) ? {
+                key: fs.readFileSync(env('VITE_HTTPS_KEY')),
+                cert: fs.readFileSync(env('VITE_HTTPS_CERT')),
+            }: void 0
         }
     };
 });

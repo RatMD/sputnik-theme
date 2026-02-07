@@ -1,6 +1,6 @@
 {
-  "_vendor-CzvjBhwS.js": {
-    "file": "assets/vendor-CzvjBhwS.js",
+  "_vendor-DXpDDr2X.js": {
+    "file": "assets/vendor-DXpDDr2X.js",
     "name": "vendor"
   },
   "assets/fonts/limelight-v21-latin-regular.woff2": {
@@ -20,15 +20,15 @@
     "src": "assets/fonts/zalando-sans-expanded-v2-latin-regular.woff2"
   },
   "resources/theme.ts": {
-    "file": "assets/theme-CE0XNYtY.js",
+    "file": "assets/theme-CCL0sG07.js",
     "name": "theme",
     "src": "resources/theme.ts",
     "isEntry": true,
     "imports": [
-      "_vendor-CzvjBhwS.js"
+      "_vendor-DXpDDr2X.js"
     ],
     "css": [
-      "assets/theme-Dw4ismzD.css"
+      "assets/theme-B0rZsLS5.css"
     ],
     "assets": [
       "assets/zalando-sans-expanded-v2-latin-regular-BbAsit5s.woff2",

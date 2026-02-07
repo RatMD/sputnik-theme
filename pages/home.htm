@@ -7,7 +7,22 @@ description = "Homepage"
 title = "Homepage"
 meta_title = "Homepage"
 meta_description = "Welcome to my awesome homepage."
+
+[blogPosts]
+postsPerPage = "5"
+postPage = "post"
 ==
-<p>
-    This is some server-side <strong>rendered content</strong>, passed to Vue using Laika.
-</p>
+<div class="w-full max-w-2xl mx-auto text-center flex flex-col gap-4">
+    <p>
+        <strong>LAIKA</strong> is a bridge-adapter for OctoberCMS that lets your Vue runtime work
+        directly with native CMS content and components, rendering them seamlessly inside a modern
+        Vue-powered frontend. Inspired by Inertia.js.
+    </p>
+    <p class="text-sm">
+        This section is static content from <code class="text-[#DE3163]">&lt;theme&gt;/pages/home.htm</code>,
+        styled with Tailwind CSS and compiled through Vite (with HMR support). The section below
+        showcases the <code class="text-[#DE3163]">blogPosts</code> component provided by the
+        RainLab.User extension, rendered inside the <code class="text-[#DE3163]">&lt;theme&gt;/resources/pages/HomePage.vue</code>
+        component.
+    </p>
+</div>
