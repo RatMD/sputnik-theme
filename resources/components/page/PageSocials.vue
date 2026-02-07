@@ -7,6 +7,7 @@
                         <Button size="icon-lg" variant="ghost" @click="visit(item)">
                             <Facebook v-if="item.url.includes('facebook.com')" class="size-5 stroke-1.5 text-black" />
                             <Instagram v-else-if="item.url.includes('instagram.com')" class="size-5 stroke-1.5 text-black" />
+                            <GitHub v-else-if="item.url.includes('github.com')" class="size-5 stroke-1.5 text-black" />
                         </Button>
                     </TooltipTrigger>
                     <TooltipContent side="bottom">
@@ -23,6 +24,7 @@ import { useLaika } from '../../../../../plugins/ratmd/laika/resources';
 import { computed } from 'vue';
 import Facebook from '@/components/socials/Facebook.vue';
 import Instagram from '@/components/socials/Instagram.vue';
+import GitHub from '@/components/socials/GitHub.vue';
 import { Button } from '@/components/button';
 import {
     Tooltip,
