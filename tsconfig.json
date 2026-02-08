@@ -13,6 +13,8 @@
         "moduleResolution": "bundler",
         "paths": {
             "@/*": ["./resources/*"],
+            "@laika": ["../../plugins/ratmd/laika/resources/index.ts"],
+            "@laika/*": ["../../plugins/ratmd/laika/resources/*"],
         },
         "types": [
             "vite/client"
@@ -34,6 +36,6 @@
         "./resources/**/*",
         "./resources/**/*.ts",
         "./resources/**/*.vue",
-        "../../../plugins/ratmd/laika/resources/**/*"
+        "../../plugins/ratmd/laika/resources/**/*"
     ]
 }

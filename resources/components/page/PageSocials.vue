@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useLaika } from '../../../../../plugins/ratmd/laika/resources';
+import { useLaika } from '@laika';
 import { computed } from 'vue';
 import Facebook from '@/components/socials/Facebook.vue';
 import Instagram from '@/components/socials/Instagram.vue';

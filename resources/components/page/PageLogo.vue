@@ -1,14 +1,14 @@
 <template>
-    <div class="flex flex-col items-center gap-2">
-        <a href="/" class="font-logo text-7xl" @click.prevent="$laika.visit('/');">
+    <div class="flex flex-col items-start md:items-center gap-2">
+        <a href="/" class="font-logo text-3xl md:text-5xl lg:text-7xl" @click.prevent="$laika.visit('/');">
             {{ $payload?.theme.options.site_name || 'SPUTNIK' }}
         </a>
-        <span class="font-display" v-html="description"></span>
+        <span class="font-display text-xs md:text-base" v-html="description"></span>
     </div>
 </template>
 
 <script lang="ts" setup>
-import { useLaika } from '../../../../../plugins/ratmd/laika/resources';
+import { useLaika } from '@laika';
 import { computed } from 'vue';
 
 // Composables

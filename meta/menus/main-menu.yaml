@@ -1,19 +1,23 @@
 items:
     -
         title: Home
+        nesting: null
         type: url
         url: /
         code: ''
+        reference: null
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Static Content'
+        title: 'Static Page'
         nesting: 0
         type: static-page
         code: ''
-        reference: static-content
+        reference: static-page
         replace: 0
         viewBag:
             isHidden: '0'

@@ -61,6 +61,7 @@ export default defineConfig(() => {
         resolve: {
             alias: {
                 '@': path.resolve(__dirname, './resources'),
+                '@laika': path.resolve(__dirname, '../../plugins/ratmd/laika/resources'),
             }
         },
         server: {
