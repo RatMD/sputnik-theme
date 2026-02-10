@@ -1,6 +1,6 @@
 <template>
-    <nav v-if="socialMenu && socialMenu.vars.menuItems.length > 0" class="flex flex-row gap-2">
-        <template v-for="(item, idx) of socialMenu.vars.menuItems" :key="idx">
+    <nav v-if="socialMenu && socialMenu.props.menuItems.length > 0" class="flex flex-row gap-2">
+        <template v-for="(item, idx) of socialMenu.props.menuItems" :key="idx">
             <TooltipProvider>
                 <Tooltip>
                     <TooltipTrigger as-child>

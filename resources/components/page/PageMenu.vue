@@ -1,8 +1,8 @@
 <template>
-    <template v-if="mainMenu && mainMenu.vars.menuItems.length > 0">
+    <template v-if="mainMenu && mainMenu.props.menuItems.length > 0">
         <NavigationMenu v-if="isDesktop" class="bg-white rounded-lg">
             <NavigationMenuList>
-                <template v-for="(item, idx) of mainMenu.vars.menuItems" :key="idx">
+                <template v-for="(item, idx) of mainMenu.props.menuItems" :key="idx">
                     <NavigationMenuItem :href="item.url"
                         @click.prevent="() => $laika.visit(item.url)" as-child :class="navigationMenuTriggerStyle()">
                         <NavigationMenuLink :href="item.url">{{ item.title }}</NavigationMenuLink>

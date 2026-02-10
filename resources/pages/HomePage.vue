@@ -8,13 +8,13 @@
 
         <div class="w-full">
             <div class="w-full max-w-6xl mx-auto py-8 px-6 flex flex-col gap-4">
-                <PageComponent name="blogPosts" v-slot="{ vars }">
-                    <template v-if="vars.posts.data.length == 0">
-                        {{ vars.noPostsMessage }}
+                <PageComponent name="blogPosts" v-slot="{ props }">
+                    <template v-if="props.posts.data.length == 0">
+                        {{ props.noPostsMessage }}
                     </template>
                     <template v-else>
                         <div class="grid grid-cols-2 grid-rows-2">
-                            <div v-for="(post, idx) of vars.posts.data" :key="post.id" :class="{
+                            <div v-for="(post, idx) of props.posts.data" :key="post.id" :class="{
                                 'row-span-2': idx === 0
                             }">
                                 <a :href="post.url" :class="[
